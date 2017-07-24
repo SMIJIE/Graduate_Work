@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="JavaEEDiploma:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="diploma-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="JavaEEDiploma:war exploded" />
+    </root>
+  </artifact>
+</component>
