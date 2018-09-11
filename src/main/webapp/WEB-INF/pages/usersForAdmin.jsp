@@ -15,7 +15,7 @@
     <style>
         html,
         body {
-            overflow-x: hidden!important;
+            overflow-x: hidden !important;
             font-family: 'Source Sans Pro', sans-serif;
             -webkit-font-smoothing: antialiased;
             min-height: 100%;
@@ -25,15 +25,18 @@
             -o-background-size: cover;
             background-size: cover;
         }
-        table{
-            border:none;
+
+        table {
+            border: none;
         }
-        tr:hover{
+
+        tr:hover {
             background: #0073b7;
         }
-        table tr td{
-            border:none;
-            border-bottom:1px solid #00ff7f;
+
+        table tr td {
+            border: none;
+            border-bottom: 1px solid #00ff7f;
         }
     </style>
 </head>
@@ -71,9 +74,11 @@
                         <li class="user-footer">
                             <c:url value="/logout" var="logoutUrl"/>
                             <a href="${logoutUrl}"
-                               class="btn btn-inverse btn-flat">Sign out &nbsp;<span class="glyphicon glyphicon-send" aria-hidden="true"></span></a>
+                               class="btn btn-inverse btn-flat">Sign out &nbsp;<span class="glyphicon glyphicon-send"
+                                                                                     aria-hidden="true"></span></a>
                             <a href="/userSettings"
-                               class="btn btn-inverse btn-flat">Settings &nbsp;<span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span></a>
+                               class="btn btn-inverse btn-flat">Settings &nbsp;<span
+                                    class="glyphicon glyphicon-paperclip" aria-hidden="true"></span></a>
                         </li>
                     </ul>
                 </li>
@@ -102,14 +107,16 @@
                 <a href="/analytics"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>&nbsp; Analytics</a>
             </li>
             <li class="active">
-                <a href="/scheduler"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>&nbsp; Scheduler</a>
+                <a href="/scheduler"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>&nbsp;
+                    Scheduler</a>
             </li>
             <li class="active">
                 <a href="/exchangeRate"><span class="glyphicon glyphicon-usd" aria-hidden="true"></span>&nbsp; Exchange
                     Rates</a>
             </li>
             <li class="active">
-                <a href="/currencySettings"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>&nbsp; Settings</a>
+                <a href="/currencySettings"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>&nbsp;
+                    Settings</a>
             </li>
             <li class="active">
                 <a href="/help"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>&nbsp;
@@ -141,13 +148,14 @@
                         }
                     }
                 }
+
                 var clock_timer_455325530 = -1; </script>
                 <script type="text/javascript" charset="UTF-8"
                         src="https://widgets.booked.net/time/info?ver=2&domid=&type=14&id=455325530&scode=2&city_id=18881&wlangid=1&mode=2&details=0&background=ffffff&color=00c8ff&add_background=ffffff&add_color=00c8ff&head_color=ffffff&border=0&transparent=0"></script>
             </li>
             <!-- clock widget -->
 
-        <%--Button for admins--%>
+            <%--Button for admins--%>
             <c:if test="${user.role eq 'ADMIN'}">
                 <li class="active">
                     <a href="/usersForAdmin"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;
@@ -172,13 +180,17 @@
             <div class="container">
                 <ul id="groupList" class="nav navbar-nav">
                     <li>
-                        <button type="button" id="delete_user" class="btn btn-primary navbar-btn"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete Users</button>
+                        <button type="button" id="delete_user" class="btn btn-primary navbar-btn"><span
+                                class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete Users
+                        </button>
                     </li>
                 </ul>
 
                 <form class="navbar-form navbar-left" role="search" action="/search" method="post">
                     <input type="text" class="form-control" name="pattern" placeholder="Search by login">
-                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</button>
+                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"
+                                                                        aria-hidden="true"></span> Search
+                    </button>
                 </form>
             </div>
             <%--Navbar--%>
@@ -197,7 +209,8 @@
                 </thead>
                 <c:forEach items="${allUsers}" var="userOne">
                     <tr>
-                        <td><input type="checkbox" name="toDelete[]" value="${userOne.id}" id="checkbox_${userOne.id}"/></td>
+                        <td><input type="checkbox" name="toDelete[]" value="${userOne.id}" id="checkbox_${userOne.id}"/>
+                        </td>
                         <form action="/update/${userOne.login}" id="${userOne.login}" method="POST">
                             <td><input type="text" class="form-control" name="newLogin" value="${userOne.login}"/></td>
                             <td><input type="text" class="form-control" name="email" value="${userOne.email}"/></td>

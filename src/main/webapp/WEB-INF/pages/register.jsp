@@ -14,7 +14,7 @@
     <link href="<c:url value="/static/Style.css"/>" rel="stylesheet" type="text/css"/>
 
     <style>
-        html,body {
+        html, body {
             background: url('<c:url value="/static/Background_Title.jpg"/>');
             -webkit-background-size: cover;
             -moz-background-size: cover;
@@ -25,15 +25,15 @@
 
     <%--For email validation--%>
     <script>
-        $(document).ready(function() {
-            $('#email').blur(function() {
-                if($(this).val() != '') {
+        $(document).ready(function () {
+            $('#email').blur(function () {
+                if ($(this).val() != '') {
                     var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
-                    if(pattern.test($(this).val())){
-                        $(this).css({'border' : '1px solid #569b44'});
+                    if (pattern.test($(this).val())) {
+                        $(this).css({'border': '1px solid #569b44'});
                         $('#valid').text('Correctly');
                     } else {
-                        $(this).css({'border' : '1px solid #ff0000'});
+                        $(this).css({'border': '1px solid #ff0000'});
                         $('#valid').text('Incorrectly');
                     }
                 }
@@ -44,9 +44,9 @@
 
     <!-- Setting the input mask -->
     <script type="text/javascript">
-        $(function(){
+        $(function () {
             //элемент, к которому необходимо добавить маску
-            $("#phone").mask("+38 (999) 999 99 99",{placeholder: "*" });
+            $("#phone").mask("+38 (999) 999 99 99", {placeholder: "*"});
         });
     </script>
     <!-- Setting the input mask -->
@@ -66,7 +66,8 @@
         <input type="text" class="form-control" name="login" placeholder="Login" maxlength="18"><br>
         <input type="text" class="form-control" name="password" placeholder="Password" maxlength="18"><br>
         <!-- Text field for entering email -->
-        <input type="text" class="form-control" id="email" name="email" placeholder="E-mail"><span id="valid"></span><br>
+        <input type="text" class="form-control" id="email" name="email" placeholder="E-mail"><span
+            id="valid"></span><br>
         <!-- Text field for entering phone number -->
         <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone"><br>
         <input class="btn btn-success" type="submit" value="Sign up"><br>
@@ -96,7 +97,8 @@
             <img class="img-circle" src="<c:url value="/static/Emblem_5.png"/>" alt="Generic placeholder image"
                  width="140" height="140">
             <h4>Keep records in any currency of the world</h4>
-            <p>In the list of currencies of Home Accounting, there are all currencies in the world. Select the currencies that you use.</p>
+            <p>In the list of currencies of Home Accounting, there are all currencies in the world. Select the
+                currencies that you use.</p>
         </div>
         <div class="col-lg-4">
             <img class="img-circle" src="<c:url value="/static/Emblem_6.png"/>" alt="Generic placeholder image"

@@ -92,6 +92,7 @@ form {
         margin-left: 0;
     }
 }
+
 /*    Components: navbar, logo and content header
  ------------------------------------------------*/
 
@@ -250,7 +251,6 @@ body > .header .logo {
 /*    Skin Black
  ------------------------------------------------*/
 
-
 /* Background colors
  ------------------------------------------------*/
 
@@ -270,54 +270,71 @@ body > .header .logo {
 .bg-black {
     color: #f9f9f9 !important;
 }
+
 .bg-gray {
     background-color: #eaeaec !important;
 }
+
 .bg-black {
     background-color: #222222 !important;
 }
+
 .bg-red {
     background-color: #f56954 !important;
 }
+
 .bg-yellow {
     background-color: #f39c12 !important;
 }
+
 .bg-aqua {
     background-color: #00c0ef !important;
 }
+
 .bg-blue {
     background-color: #0073b7 !important;
 }
+
 .bg-light-blue {
     background-color: #3c8dbc !important;
 }
+
 .bg-green {
     background-color: #00a65a !important;
 }
+
 .bg-navy {
     background-color: #001f3f !important;
 }
+
 .bg-teal {
     background-color: #39cccc !important;
 }
+
 .bg-olive {
     background-color: #3d9970 !important;
 }
+
 .bg-lime {
     background-color: #01ff70 !important;
 }
+
 .bg-orange {
     background-color: #ff851b !important;
 }
+
 .bg-fuchsia {
     background-color: #f012be !important;
 }
+
 .bg-purple {
     background-color: #932ab6 !important;
 }
+
 .bg-maroon {
     background-color: #85144b !important;
 }
+
 /* Background colors
  ------------------------------------------------*/
 
@@ -331,6 +348,7 @@ body > .header .logo {
     border-radius: 2px;
     margin-bottom: 50px;
 }
+
 .small-box-footer {
     position: relative;
     text-align: center;
@@ -342,30 +360,35 @@ body > .header .logo {
     background: rgba(0, 0, 0, 0.1);
     text-decoration: none;
 }
+
 .small-box-footer:hover {
     color: #fff;
     background: rgba(0, 0, 0, 0.15);
 }
+
 .small-box h3 {
-    color:#FFFFFF;
+    color: #FFFFFF;
     font-size: 35px;
     font-weight: bold;
     margin: 0 0 10px 0;
     white-space: nowrap;
     padding: 0;
 }
+
 .small-box em {
-    color:#FFFFFF;
+    color: #FFFFFF;
     font-size: 20px;
 }
 
 .small-box p {
-    color:#FFFFFF;
+    color: #FFFFFF;
     font-size: 15px;
 }
+
 .box-header a {
-    color:#FFFFFF; /* Цвет ссылок */
+    color: #FFFFFF; /* Цвет ссылок */
 }
+
 /* Component: Small boxes
  ------------------------------------------------*/
 

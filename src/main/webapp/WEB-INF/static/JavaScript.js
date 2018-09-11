@@ -206,6 +206,7 @@ $(function () {
     //$("body").append(demo);
     //$("body").append(demo_settings);
 });
+
 function fix_sidebar() {
     //Make sure the body tag has the .fixed class
     if (!$("body").hasClass("fixed")) {
@@ -218,14 +219,17 @@ function fix_sidebar() {
         color: "rgba(0,0,0,0.2)"
     });
 }
+
 function change_layout() {
     $("body").toggleClass("fixed");
     fix_sidebar();
 }
+
 function change_skin(cls) {
     $("body").removeClass("skin-blue skin-black");
     $("body").addClass(cls);
 }
+
 /*END DEMO*/
 $(window).load(function () {
     /*! pace 0.4.17 */
@@ -240,11 +244,11 @@ $(window).load(function () {
                     W.call(b, d) && (a[d] = b[d]);
                 return c.prototype = b.prototype, a.prototype = new c, a.__super__ = b.prototype, a
             }, Y = [].indexOf || function (a) {
-                    for (var b = 0, c = this.length; c > b; b++)
-                        if (b in this && this[b] === a)
-                            return b;
-                    return -1
-                };
+                for (var b = 0, c = this.length; c > b; b++)
+                    if (b in this && this[b] === a)
+                        return b;
+                return -1
+            };
         for (t = {
             catchupTime: 500,
             initialRate: .03,
@@ -844,6 +848,7 @@ $(window).load(function () {
             }
         }
     };
+
     function g() {
         i = h[k](function () {
             a.each(function () {
@@ -1169,7 +1174,7 @@ $(window).load(function () {
         var f = h.extend({checkedClass: l, disabledClass: s, indeterminateClass: m, labelHover: !0, aria: !1}, a),
             k = f.handle, B = f.hoverClass || "hover", x = f.focusClass || "focus", w = f.activeClass || "active",
             y = !!f.labelHover, C = f.labelHoverClass ||
-                "hover", r = ("" + f.increaseArea).replace("%", "") | 0;
+            "hover", r = ("" + f.increaseArea).replace("%", "") | 0;
         if ("checkbox" == k || k == u)
             d = 'input[type="' + k + '"]';
         -50 > r && (r = -50);
@@ -1264,9 +1269,10 @@ $(window).load(function () {
  * Licensed under http://www.apache.org/licenses/LICENSE-2.0
  */
 
-if ("undefined" == typeof jQuery)throw new Error("Bootstrap requires jQuery");
+if ("undefined" == typeof jQuery) throw new Error("Bootstrap requires jQuery");
 +function (a) {
     "use strict";
+
     function b() {
         var a = document.createElement("bootstrap"), b = {
             WebkitTransition: "webkitTransitionEnd",
@@ -1274,7 +1280,7 @@ if ("undefined" == typeof jQuery)throw new Error("Bootstrap requires jQuery");
             OTransition: "oTransitionEnd otransitionend",
             transition: "transitionend"
         };
-        for (var c in b)if (void 0 !== a.style[c])return {end: b[c]}
+        for (var c in b) if (void 0 !== a.style[c]) return {end: b[c]}
     }
 
     a.fn.emulateTransitionEnd = function (b) {
@@ -1367,24 +1373,24 @@ if ("undefined" == typeof jQuery)throw new Error("Bootstrap requires jQuery");
         var d = this.$element.find(".item.active"), e = c || d[b](), f = this.interval,
             g = "next" == b ? "left" : "right", h = "next" == b ? "first" : "last", i = this;
         if (!e.length) {
-            if (!this.options.wrap)return;
+            if (!this.options.wrap) return;
             e = this.$element.find(".item")[h]()
         }
         this.sliding = !0, f && this.pause();
         var j = a.Event("slide.bs.carousel", {relatedTarget: e[0], direction: g});
         if (!e.hasClass("active")) {
             if (this.$indicators.length && (this.$indicators.find(".active").removeClass("active"), this.$element.one("slid.bs.carousel", function () {
-                    var b = a(i.$indicators.children()[i.getActiveIndex()]);
-                    b && b.addClass("active")
-                })), a.support.transition && this.$element.hasClass("slide")) {
-                if (this.$element.trigger(j), j.isDefaultPrevented())return;
+                var b = a(i.$indicators.children()[i.getActiveIndex()]);
+                b && b.addClass("active")
+            })), a.support.transition && this.$element.hasClass("slide")) {
+                if (this.$element.trigger(j), j.isDefaultPrevented()) return;
                 e.addClass(b), e[0].offsetWidth, d.addClass(g), e.addClass(g), d.one(a.support.transition.end, function () {
                     e.removeClass([b, g].join(" ")).addClass("active"), d.removeClass(["active", g].join(" ")), i.sliding = !1, setTimeout(function () {
                         i.$element.trigger("slid.bs.carousel")
                     }, 0)
                 }).emulateTransitionEnd(600)
             } else {
-                if (this.$element.trigger(j), j.isDefaultPrevented())return;
+                if (this.$element.trigger(j), j.isDefaultPrevented()) return;
                 d.removeClass("active"), e.addClass("active"), this.sliding = !1, this.$element.trigger("slid.bs.carousel")
             }
             return f && this.cycle(), this
@@ -1425,7 +1431,7 @@ if ("undefined" == typeof jQuery)throw new Error("Bootstrap requires jQuery");
                 var c = this.$parent && this.$parent.find("> .panel > .in");
                 if (c && c.length) {
                     var d = c.data("bs.collapse");
-                    if (d && d.transitioning)return;
+                    if (d && d.transitioning) return;
                     c.collapse("hide"), d || c.data("bs.collapse", null)
                 }
                 var e = this.dimension();
@@ -1433,7 +1439,7 @@ if ("undefined" == typeof jQuery)throw new Error("Bootstrap requires jQuery");
                 var f = function () {
                     this.$element.removeClass("collapsing").addClass("in")[e]("auto"), this.transitioning = 0, this.$element.trigger("shown.bs.collapse")
                 };
-                if (!a.support.transition)return f.call(this);
+                if (!a.support.transition) return f.call(this);
                 var g = a.camelCase(["scroll", e].join("-"));
                 this.$element.one(a.support.transition.end, a.proxy(f, this)).emulateTransitionEnd(350)[e](this.$element[0][g])
             }
@@ -1470,6 +1476,7 @@ if ("undefined" == typeof jQuery)throw new Error("Bootstrap requires jQuery");
     })
 }(jQuery), +function (a) {
     "use strict";
+
     function b() {
         a(d).remove(), a(e).each(function (b) {
             var d = c(a(this));
@@ -1492,7 +1499,7 @@ if ("undefined" == typeof jQuery)throw new Error("Bootstrap requires jQuery");
         if (!e.is(".disabled, :disabled")) {
             var f = c(e), g = f.hasClass("open");
             if (b(), !g) {
-                if ("ontouchstart" in document.documentElement && !f.closest(".navbar-nav").length && a('<div class="dropdown-backdrop"/>').insertAfter(a(this)).on("click", b), f.trigger(d = a.Event("show.bs.dropdown")), d.isDefaultPrevented())return;
+                if ("ontouchstart" in document.documentElement && !f.closest(".navbar-nav").length && a('<div class="dropdown-backdrop"/>').insertAfter(a(this)).on("click", b), f.trigger(d = a.Event("show.bs.dropdown")), d.isDefaultPrevented()) return;
                 f.toggleClass("open").trigger("shown.bs.dropdown"), e.focus()
             }
             return !1
@@ -1502,7 +1509,7 @@ if ("undefined" == typeof jQuery)throw new Error("Bootstrap requires jQuery");
             var d = a(this);
             if (b.preventDefault(), b.stopPropagation(), !d.is(".disabled, :disabled")) {
                 var f = c(d), g = f.hasClass("open");
-                if (!g || g && 27 == b.keyCode)return 27 == b.which && f.find(e).focus(), d.click();
+                if (!g || g && 27 == b.keyCode) return 27 == b.which && f.find(e).focus(), d.click();
                 var h = a("[role=menu] li:not(.divider):visible a", f);
                 if (h.length) {
                     var i = h.index(h.filter(":focus"));
@@ -1561,10 +1568,10 @@ if ("undefined" == typeof jQuery)throw new Error("Bootstrap requires jQuery");
         if (this.isShown && this.options.backdrop) {
             var d = a.support.transition && c;
             if (this.$backdrop = a('<div class="modal-backdrop ' + c + '" />').appendTo(document.body), this.$element.on("click.dismiss.modal", a.proxy(function (a) {
-                    a.target === a.currentTarget && ("static" == this.options.backdrop ? this.$element[0].focus.call(this.$element[0]) : this.hide.call(this))
-                }, this)), d && this.$backdrop[0].offsetWidth, this.$backdrop.addClass("in"), !b)return;
+                a.target === a.currentTarget && ("static" == this.options.backdrop ? this.$element[0].focus.call(this.$element[0]) : this.hide.call(this))
+            }, this)), d && this.$backdrop[0].offsetWidth, this.$backdrop.addClass("in"), !b) return;
             d ? this.$backdrop.one(a.support.transition.end, b).emulateTransitionEnd(150) : b()
-        } else!this.isShown && this.$backdrop ? (this.$backdrop.removeClass("in"), a.support.transition && this.$element.hasClass("fade") ? this.$backdrop.one(a.support.transition.end, b).emulateTransitionEnd(150) : b()) : b && b()
+        } else !this.isShown && this.$backdrop ? (this.$backdrop.removeClass("in"), a.support.transition && this.$element.hasClass("fade") ? this.$backdrop.one(a.support.transition.end, b).emulateTransitionEnd(150) : b()) : b && b()
     };
     var c = a.fn.modal;
     a.fn.modal = function (c, d) {
@@ -1638,7 +1645,7 @@ if ("undefined" == typeof jQuery)throw new Error("Bootstrap requires jQuery");
     }, b.prototype.show = function () {
         var b = a.Event("show.bs." + this.type);
         if (this.hasContent() && this.enabled) {
-            if (this.$element.trigger(b), b.isDefaultPrevented())return;
+            if (this.$element.trigger(b), b.isDefaultPrevented()) return;
             var c = this.tip();
             this.setContent(), this.options.animation && c.addClass("fade");
             var d = "function" == typeof this.options.placement ? this.options.placement.call(this, c[0], this.$element[0]) : this.options.placement,
@@ -1739,7 +1746,7 @@ if ("undefined" == typeof jQuery)throw new Error("Bootstrap requires jQuery");
     var b = function (a, b) {
         this.init("popover", a, b)
     };
-    if (!a.fn.tooltip)throw new Error("Popover requires tooltip.js");
+    if (!a.fn.tooltip) throw new Error("Popover requires tooltip.js");
     b.DEFAULTS = a.extend({}, a.fn.tooltip.Constructor.DEFAULTS, {
         placement: "right",
         trigger: "click",
@@ -1771,6 +1778,7 @@ if ("undefined" == typeof jQuery)throw new Error("Bootstrap requires jQuery");
     }
 }(jQuery), +function (a) {
     "use strict";
+
     function b(c, d) {
         var e, f = a.proxy(this.process, this);
         this.$element = a(c).is("body") ? a(window) : a(c), this.$body = a("body"), this.$scrollElement = this.$element.on("scroll.bs.scroll-spy.data-api", f), this.options = a.extend({}, b.DEFAULTS, d), this.selector = (this.options.target || (e = a(c).attr("href")) && e.replace(/.*(?=#[^\s]+$)/, "") || "") + " .nav li > a", this.offsets = a([]), this.targets = a([]), this.activeTarget = null, this.refresh(), this.process()
@@ -1792,8 +1800,8 @@ if ("undefined" == typeof jQuery)throw new Error("Bootstrap requires jQuery");
         var a, b = this.$scrollElement.scrollTop() + this.options.offset,
             c = this.$scrollElement[0].scrollHeight || this.$body[0].scrollHeight, d = c - this.$scrollElement.height(),
             e = this.offsets, f = this.targets, g = this.activeTarget;
-        if (b >= d)return g != (a = f.last()[0]) && this.activate(a);
-        for (a = e.length; a--;)g != f[a] && b >= e[a] && (!e[a + 1] || b <= e[a + 1]) && this.activate(f[a])
+        if (b >= d) return g != (a = f.last()[0]) && this.activate(a);
+        for (a = e.length; a--;) g != f[a] && b >= e[a] && (!e[a + 1] || b <= e[a + 1]) && this.activate(f[a])
     }, b.prototype.activate = function (b) {
         this.activeTarget = b, a(this.selector).parents(".active").removeClass("active");
         var c = this.selector + '[data-target="' + b + '"],' + this.selector + '[href="' + b + '"]',

@@ -356,6 +356,7 @@
         }
         return null; // специальная клавиша
     }
+
     <%--Checking the date,amount field--%>
 </script>
 

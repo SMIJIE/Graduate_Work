@@ -5,7 +5,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import ua.kiev.prog.Entity.CustomUser;
 import ua.kiev.prog.Entity.EventSheduler;
-import ua.kiev.prog.Entity.Income;
 
 import java.util.Date;
 import java.util.List;

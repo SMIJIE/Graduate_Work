@@ -19,7 +19,7 @@
     <style>
         html,
         body {
-            overflow-x: hidden!important;
+            overflow-x: hidden !important;
             font-family: 'Source Sans Pro', sans-serif;
             -webkit-font-smoothing: antialiased;
             min-height: 100%;
@@ -32,15 +32,15 @@
     </style>
     <%--For email validation--%>
     <script>
-        $(document).ready(function() {
-            $('#email').blur(function() {
-                if($(this).val() != '') {
+        $(document).ready(function () {
+            $('#email').blur(function () {
+                if ($(this).val() != '') {
                     var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
-                    if(pattern.test($(this).val())){
-                        $(this).css({'border' : '1px solid #569b44'});
+                    if (pattern.test($(this).val())) {
+                        $(this).css({'border': '1px solid #569b44'});
                         $('#valid').text('Correctly');
                     } else {
-                        $(this).css({'border' : '1px solid #ff0000'});
+                        $(this).css({'border': '1px solid #ff0000'});
                         $('#valid').text('Incorrectly');
                     }
                 }
@@ -51,9 +51,9 @@
 
     <!-- Setting the input mask -->
     <script type="text/javascript">
-        $(function(){
+        $(function () {
             //элемент, к которому необходимо добавить маску
-            $("#phone").mask("+38 (999) 999 99 99",{placeholder: "*" });
+            $("#phone").mask("+38 (999) 999 99 99", {placeholder: "*"});
         });
     </script>
     <!-- Setting the input mask -->
@@ -92,9 +92,11 @@
                         <li class="user-footer">
                             <c:url value="/logout" var="logoutUrl"/>
                             <a href="${logoutUrl}"
-                               class="btn btn-inverse btn-flat">Sign out &nbsp;<span class="glyphicon glyphicon-send" aria-hidden="true"></span></a>
+                               class="btn btn-inverse btn-flat">Sign out &nbsp;<span class="glyphicon glyphicon-send"
+                                                                                     aria-hidden="true"></span></a>
                             <a href="/userSettings"
-                               class="btn btn-inverse btn-flat">Settings &nbsp;<span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span></a>
+                               class="btn btn-inverse btn-flat">Settings &nbsp;<span
+                                    class="glyphicon glyphicon-paperclip" aria-hidden="true"></span></a>
                         </li>
                     </ul>
                 </li>
@@ -123,17 +125,20 @@
                 <a href="/analytics"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>&nbsp; Analytics</a>
             </li>
             <li class="active">
-                <a href="/scheduler"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>&nbsp; Scheduler</a>
+                <a href="/scheduler"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>&nbsp;
+                    Scheduler</a>
             </li>
             <li class="active">
                 <a href="/exchangeRate"><span class="glyphicon glyphicon-usd" aria-hidden="true"></span>&nbsp; Exchange
                     Rates</a>
             </li>
             <li class="active">
-                <a href="/currencySettings"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>&nbsp; Settings</a>
+                <a href="/currencySettings"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>&nbsp;
+                    Settings</a>
             </li>
             <li class="active">
-                <a href="/help"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>&nbsp; Help</a>
+                <a href="/help"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>&nbsp;
+                    Help</a>
             </li>
             <li class="active">
                 <a href="/entertainment"><span class="glyphicon glyphicon-play" aria-hidden="true"></span>&nbsp;Entertainment</a>
@@ -161,13 +166,14 @@
                         }
                     }
                 }
+
                 var clock_timer_455325530 = -1; </script>
                 <script type="text/javascript" charset="UTF-8"
                         src="https://widgets.booked.net/time/info?ver=2&domid=&type=14&id=455325530&scode=2&city_id=18881&wlangid=1&mode=2&details=0&background=ffffff&color=00c8ff&add_background=ffffff&add_color=00c8ff&head_color=ffffff&border=0&transparent=0"></script>
             </li>
             <!-- clock widget -->
 
-        <%--Button for admins--%>
+            <%--Button for admins--%>
             <c:if test="${user.role eq 'ADMIN'}">
                 <li class="active">
                     <a href="/usersForAdmin"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;
@@ -189,13 +195,17 @@
     <%--Users settings--%>
     <div class="row">
         <div class="col-xs-9 form-group has-success">
-            <c:url value="/update" var="updateUrl" />
+            <c:url value="/update" var="updateUrl"/>
             <form action="${updateUrl}" method="POST">
-                <h4>Login:</h4> <input type="text" class="form-control" name="login"  value="${user.login}" maxlength="18">
-                <h4>Password:</h4> <input type="text" class="form-control" name="password"  placeholder="Input new password" maxlength="18">
-                <h4>E-mail:</h4> <input type="text" class="form-control" id="email" name="email"  value="${user.email}" /><span id="valid"></span>
-                <h4>Phone:</h4> <input type="text" class="form-control" id="phone" name="phone"  value="${user.phone}" /><br/>
-                <input type="submit" class="btn btn-success btn-lg" value="Update" />
+                <h4>Login:</h4> <input type="text" class="form-control" name="login" value="${user.login}"
+                                       maxlength="18">
+                <h4>Password:</h4> <input type="text" class="form-control" name="password"
+                                          placeholder="Input new password" maxlength="18">
+                <h4>E-mail:</h4> <input type="text" class="form-control" id="email" name="email" value="${user.email}"/><span
+                    id="valid"></span>
+                <h4>Phone:</h4> <input type="text" class="form-control" id="phone" name="phone"
+                                       value="${user.phone}"/><br/>
+                <input type="submit" class="btn btn-success btn-lg" value="Update"/>
             </form>
             <c:if test="${emptyFields ne null}">
                 <div class="alert alert-danger" role="alert">Empty fields!</div>

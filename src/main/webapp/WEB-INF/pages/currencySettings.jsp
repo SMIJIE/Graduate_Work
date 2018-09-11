@@ -123,7 +123,8 @@
                 <a href="/analytics"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>&nbsp; Analytics</a>
             </li>
             <li class="active">
-                <a href="/scheduler"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>&nbsp; Scheduler</a>
+                <a href="/scheduler"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>&nbsp;
+                    Scheduler</a>
             </li>
             <li class="active">
                 <a href="/exchangeRate"><span class="glyphicon glyphicon-usd" aria-hidden="true"></span>&nbsp; Exchange
@@ -163,6 +164,7 @@
                         }
                     }
                 }
+
                 var clock_timer_455325530 = -1; </script>
                 <script type="text/javascript" charset="UTF-8"
                         src="https://widgets.booked.net/time/info?ver=2&domid=&type=14&id=455325530&scode=2&city_id=18881&wlangid=1&mode=2&details=0&background=ffffff&color=00c8ff&add_background=ffffff&add_color=00c8ff&head_color=ffffff&border=0&transparent=0"></script>

@@ -1,4 +1,3 @@
-<%@ page import="java.text.SimpleDateFormat" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -355,8 +354,9 @@
                                             <c:if test="${eventSheduler.key eq days.key}">
                                                 <c:forEach items="${eventSheduler.value}" var="oneEventSheduler">
                                                     <br>
-                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span style="color:red" class="glyphicon glyphicon-minus"
-                                                                                                               aria-hidden="true" title="Delete event"></span></a>
+                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span
+                                                            style="color:red" class="glyphicon glyphicon-minus"
+                                                            aria-hidden="true" title="Delete event"></span></a>
                                                     <sup style="font-size: x-small; color: mediumblue">
                                                             ${oneEventSheduler.time}
                                                     </sup>
@@ -364,17 +364,17 @@
                                                 <span style="background: #00a65a">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Expense'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Expense'}">
                                                 <span style="background: #f56954">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Nothing'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Nothing'}">
                                                 <span style="background: burlywood">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
+                                                    </c:if>
                                                 </c:forEach>
                                             </c:if>
                                         </c:forEach>
@@ -390,8 +390,9 @@
                                             <c:if test="${eventSheduler.key eq days.key}">
                                                 <c:forEach items="${eventSheduler.value}" var="oneEventSheduler">
                                                     <br>
-                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span style="color:red" class="glyphicon glyphicon-minus"
-                                                                                                               aria-hidden="true" title="Delete event"></span></a>
+                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span
+                                                            style="color:red" class="glyphicon glyphicon-minus"
+                                                            aria-hidden="true" title="Delete event"></span></a>
                                                     <sup style="font-size: x-small; color: mediumblue">
                                                             ${oneEventSheduler.time}
                                                     </sup>
@@ -399,17 +400,17 @@
                                                 <span style="background: #00a65a">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Expense'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Expense'}">
                                                 <span style="background: #f56954">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Nothing'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Nothing'}">
                                                 <span style="background: burlywood">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
+                                                    </c:if>
                                                 </c:forEach>
                                             </c:if>
                                         </c:forEach>
@@ -428,8 +429,9 @@
                                             <c:if test="${eventSheduler.key eq days.key}">
                                                 <c:forEach items="${eventSheduler.value}" var="oneEventSheduler">
                                                     <br>
-                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span style="color:red" class="glyphicon glyphicon-minus"
-                                                                                                               aria-hidden="true" title="Delete event"></span></a>
+                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span
+                                                            style="color:red" class="glyphicon glyphicon-minus"
+                                                            aria-hidden="true" title="Delete event"></span></a>
                                                     <sup style="font-size: x-small; color: mediumblue">
                                                             ${oneEventSheduler.time}
                                                     </sup>
@@ -437,17 +439,17 @@
                                                 <span style="background: #00a65a">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Expense'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Expense'}">
                                                 <span style="background: #f56954">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Nothing'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Nothing'}">
                                                 <span style="background: burlywood">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
+                                                    </c:if>
                                                 </c:forEach>
                                             </c:if>
                                         </c:forEach>
@@ -463,8 +465,9 @@
                                             <c:if test="${eventSheduler.key eq days.key}">
                                                 <c:forEach items="${eventSheduler.value}" var="oneEventSheduler">
                                                     <br>
-                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span style="color:red" class="glyphicon glyphicon-minus"
-                                                                                                               aria-hidden="true" title="Delete event"></span></a>
+                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span
+                                                            style="color:red" class="glyphicon glyphicon-minus"
+                                                            aria-hidden="true" title="Delete event"></span></a>
                                                     <sup style="font-size: x-small; color: mediumblue">
                                                             ${oneEventSheduler.time}
                                                     </sup>
@@ -472,17 +475,17 @@
                                                 <span style="background: #00a65a">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Expense'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Expense'}">
                                                 <span style="background: #f56954">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Nothing'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Nothing'}">
                                                 <span style="background: burlywood">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
+                                                    </c:if>
                                                 </c:forEach>
                                             </c:if>
                                         </c:forEach>
@@ -503,8 +506,9 @@
                                             <c:if test="${eventSheduler.key eq days.key}">
                                                 <c:forEach items="${eventSheduler.value}" var="oneEventSheduler">
                                                     <br>
-                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span style="color:red" class="glyphicon glyphicon-minus"
-                                                                                                               aria-hidden="true" title="Delete event"></span></a>
+                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span
+                                                            style="color:red" class="glyphicon glyphicon-minus"
+                                                            aria-hidden="true" title="Delete event"></span></a>
                                                     <sup style="font-size: x-small; color: mediumblue">
                                                             ${oneEventSheduler.time}
                                                     </sup>
@@ -512,17 +516,17 @@
                                                 <span style="background: #00a65a">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Expense'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Expense'}">
                                                 <span style="background: #f56954">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Nothing'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Nothing'}">
                                                 <span style="background: burlywood">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
+                                                    </c:if>
                                                 </c:forEach>
                                             </c:if>
                                         </c:forEach>
@@ -538,8 +542,9 @@
                                             <c:if test="${eventSheduler.key eq days.key}">
                                                 <c:forEach items="${eventSheduler.value}" var="oneEventSheduler">
                                                     <br>
-                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span style="color:red" class="glyphicon glyphicon-minus"
-                                                                                                               aria-hidden="true" title="Delete event"></span></a>
+                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span
+                                                            style="color:red" class="glyphicon glyphicon-minus"
+                                                            aria-hidden="true" title="Delete event"></span></a>
                                                     <sup style="font-size: x-small; color: mediumblue">
                                                             ${oneEventSheduler.time}
                                                     </sup>
@@ -547,17 +552,17 @@
                                                 <span style="background: #00a65a">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Expense'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Expense'}">
                                                 <span style="background: #f56954">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Nothing'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Nothing'}">
                                                 <span style="background: burlywood">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
+                                                    </c:if>
                                                 </c:forEach>
                                             </c:if>
                                         </c:forEach>
@@ -579,8 +584,9 @@
                                             <c:if test="${eventSheduler.key eq days.key}">
                                                 <c:forEach items="${eventSheduler.value}" var="oneEventSheduler">
                                                     <br>
-                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span style="color:red" class="glyphicon glyphicon-minus"
-                                                                                                               aria-hidden="true" title="Delete event"></span></a>
+                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span
+                                                            style="color:red" class="glyphicon glyphicon-minus"
+                                                            aria-hidden="true" title="Delete event"></span></a>
                                                     <sup style="font-size: x-small; color: mediumblue">
                                                             ${oneEventSheduler.time}
                                                     </sup>
@@ -588,17 +594,17 @@
                                                 <span style="background: #00a65a">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Expense'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Expense'}">
                                                 <span style="background: #f56954">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Nothing'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Nothing'}">
                                                 <span style="background: burlywood">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
+                                                    </c:if>
                                                 </c:forEach>
                                             </c:if>
                                         </c:forEach>
@@ -614,8 +620,9 @@
                                             <c:if test="${eventSheduler.key eq days.key}">
                                                 <c:forEach items="${eventSheduler.value}" var="oneEventSheduler">
                                                     <br>
-                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span style="color:red" class="glyphicon glyphicon-minus"
-                                                                                                               aria-hidden="true" title="Delete event"></span></a>
+                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span
+                                                            style="color:red" class="glyphicon glyphicon-minus"
+                                                            aria-hidden="true" title="Delete event"></span></a>
                                                     <sup style="font-size: x-small; color: mediumblue">
                                                             ${oneEventSheduler.time}
                                                     </sup>
@@ -623,17 +630,17 @@
                                                 <span style="background: #00a65a">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Expense'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Expense'}">
                                                 <span style="background: #f56954">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Nothing'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Nothing'}">
                                                 <span style="background: burlywood">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
+                                                    </c:if>
                                                 </c:forEach>
                                             </c:if>
                                         </c:forEach>
@@ -655,8 +662,9 @@
                                             <c:if test="${eventSheduler.key eq days.key}">
                                                 <c:forEach items="${eventSheduler.value}" var="oneEventSheduler">
                                                     <br>
-                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span style="color:red" class="glyphicon glyphicon-minus"
-                                                                                                               aria-hidden="true" title="Delete event"></span></a>
+                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span
+                                                            style="color:red" class="glyphicon glyphicon-minus"
+                                                            aria-hidden="true" title="Delete event"></span></a>
                                                     <sup style="font-size: x-small; color: mediumblue">
                                                             ${oneEventSheduler.time}
                                                     </sup>
@@ -664,17 +672,17 @@
                                                 <span style="background: #00a65a">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Expense'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Expense'}">
                                                 <span style="background: #f56954">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Nothing'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Nothing'}">
                                                 <span style="background: burlywood">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
+                                                    </c:if>
                                                 </c:forEach>
                                             </c:if>
                                         </c:forEach>
@@ -690,8 +698,9 @@
                                             <c:if test="${eventSheduler.key eq days.key}">
                                                 <c:forEach items="${eventSheduler.value}" var="oneEventSheduler">
                                                     <br>
-                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span style="color:red" class="glyphicon glyphicon-minus"
-                                                                                                               aria-hidden="true" title="Delete event"></span></a>
+                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span
+                                                            style="color:red" class="glyphicon glyphicon-minus"
+                                                            aria-hidden="true" title="Delete event"></span></a>
                                                     <sup style="font-size: x-small; color: mediumblue">
                                                             ${oneEventSheduler.time}
                                                     </sup>
@@ -699,17 +708,17 @@
                                                 <span style="background: #00a65a">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Expense'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Expense'}">
                                                 <span style="background: #f56954">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Nothing'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Nothing'}">
                                                 <span style="background: burlywood">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
+                                                    </c:if>
                                                 </c:forEach>
                                             </c:if>
                                         </c:forEach>
@@ -733,8 +742,9 @@
                                             <c:if test="${eventSheduler.key eq days.key}">
                                                 <c:forEach items="${eventSheduler.value}" var="oneEventSheduler">
                                                     <br>
-                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span style="color:red" class="glyphicon glyphicon-minus"
-                                                                                                               aria-hidden="true" title="Delete event"></span></a>
+                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span
+                                                            style="color:red" class="glyphicon glyphicon-minus"
+                                                            aria-hidden="true" title="Delete event"></span></a>
                                                     <sup style="font-size: x-small; color: mediumblue">
                                                             ${oneEventSheduler.time}
                                                     </sup>
@@ -742,17 +752,17 @@
                                                 <span style="background: #00a65a">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Expense'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Expense'}">
                                                 <span style="background: #f56954">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Nothing'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Nothing'}">
                                                 <span style="background: burlywood">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
+                                                    </c:if>
                                                 </c:forEach>
                                             </c:if>
                                         </c:forEach>
@@ -768,8 +778,9 @@
                                             <c:if test="${eventSheduler.key eq days.key}">
                                                 <c:forEach items="${eventSheduler.value}" var="oneEventSheduler">
                                                     <br>
-                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span style="color:red" class="glyphicon glyphicon-minus"
-                                                                                                               aria-hidden="true" title="Delete event"></span></a>
+                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span
+                                                            style="color:red" class="glyphicon glyphicon-minus"
+                                                            aria-hidden="true" title="Delete event"></span></a>
                                                     <sup style="font-size: x-small; color: mediumblue">
                                                             ${oneEventSheduler.time}
                                                     </sup>
@@ -777,17 +788,17 @@
                                                 <span style="background: #00a65a">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Expense'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Expense'}">
                                                 <span style="background: #f56954">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Nothing'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Nothing'}">
                                                 <span style="background: burlywood">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
+                                                    </c:if>
                                                 </c:forEach>
                                             </c:if>
                                         </c:forEach>
@@ -812,8 +823,9 @@
                                             <c:if test="${eventSheduler.key eq days.key}">
                                                 <c:forEach items="${eventSheduler.value}" var="oneEventSheduler">
                                                     <br>
-                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span style="color:red" class="glyphicon glyphicon-minus"
-                                                                                                               aria-hidden="true" title="Delete event"></span></a>
+                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span
+                                                            style="color:red" class="glyphicon glyphicon-minus"
+                                                            aria-hidden="true" title="Delete event"></span></a>
                                                     <sup style="font-size: x-small; color: mediumblue">
                                                             ${oneEventSheduler.time}
                                                     </sup>
@@ -821,17 +833,17 @@
                                                 <span style="background: #00a65a">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Expense'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Expense'}">
                                                 <span style="background: #f56954">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Nothing'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Nothing'}">
                                                 <span style="background: burlywood">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
+                                                    </c:if>
                                                 </c:forEach>
                                             </c:if>
                                         </c:forEach>
@@ -847,8 +859,9 @@
                                             <c:if test="${eventSheduler.key eq days.key}">
                                                 <c:forEach items="${eventSheduler.value}" var="oneEventSheduler">
                                                     <br>
-                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span style="color:red" class="glyphicon glyphicon-minus"
-                                                                                                               aria-hidden="true" title="Delete event"></span></a>
+                                                    <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span
+                                                            style="color:red" class="glyphicon glyphicon-minus"
+                                                            aria-hidden="true" title="Delete event"></span></a>
                                                     <sup style="font-size: x-small; color: mediumblue">
                                                             ${oneEventSheduler.time}
                                                     </sup>
@@ -856,17 +869,17 @@
                                                 <span style="background: #00a65a">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Expense'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Expense'}">
                                                 <span style="background: #f56954">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Nothing'}">
+                                                    </c:if>
+                                                    <c:if test="${oneEventSheduler.category eq 'Nothing'}">
                                                 <span style="background: burlywood">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
+                                                    </c:if>
                                                 </c:forEach>
                                             </c:if>
                                         </c:forEach>
@@ -892,8 +905,10 @@
                                 <c:if test="${eventSheduler.key eq days.key}">
                                     <c:forEach items="${eventSheduler.value}" var="oneEventSheduler">
                                         <br>
-                                        <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span style="color:red" class="glyphicon glyphicon-minus"
-                                                                                                   aria-hidden="true" title="Delete event"></span></a>
+                                        <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span style="color:red"
+                                                                                                      class="glyphicon glyphicon-minus"
+                                                                                                      aria-hidden="true"
+                                                                                                      title="Delete event"></span></a>
                                         <sup style="font-size: x-small; color: mediumblue">
                                                 ${oneEventSheduler.time}
                                         </sup>
@@ -901,17 +916,17 @@
                                                 <span style="background: #00a65a">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Expense'}">
+                                        </c:if>
+                                        <c:if test="${oneEventSheduler.category eq 'Expense'}">
                                                 <span style="background: #f56954">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
-                                            <c:if test="${oneEventSheduler.category eq 'Nothing'}">
+                                        </c:if>
+                                        <c:if test="${oneEventSheduler.category eq 'Nothing'}">
                                                 <span style="background: burlywood">
                                                         ${oneEventSheduler.event}
                                                 </span>
-                                            </c:if>
+                                        </c:if>
                                     </c:forEach>
                                 </c:if>
                             </c:forEach>
@@ -927,8 +942,10 @@
                                 <c:if test="${eventSheduler.key eq days.key}">
                                     <c:forEach items="${eventSheduler.value}" var="oneEventSheduler">
                                         <br>
-                                        <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span style="color:red" class="glyphicon glyphicon-minus"
-                                                                                                   aria-hidden="true" title="Delete event"></span></a>
+                                        <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span style="color:red"
+                                                                                                      class="glyphicon glyphicon-minus"
+                                                                                                      aria-hidden="true"
+                                                                                                      title="Delete event"></span></a>
                                         <sup style="font-size: x-small; color: mediumblue">
                                                 ${oneEventSheduler.time}
                                         </sup>
@@ -965,8 +982,9 @@
                                     <c:if test="${eventSheduler.key eq days.key}">
                                         <c:forEach items="${eventSheduler.value}" var="oneEventSheduler">
                                             <br>
-                                            <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span style="color:red" class="glyphicon glyphicon-minus"
-                                                                                                       aria-hidden="true" title="Delete event"></span></a>
+                                            <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span
+                                                    style="color:red" class="glyphicon glyphicon-minus"
+                                                    aria-hidden="true" title="Delete event"></span></a>
                                             <sup style="font-size: x-small; color: mediumblue">
                                                     ${oneEventSheduler.time}
                                             </sup>
@@ -1000,8 +1018,9 @@
                                     <c:if test="${eventSheduler.key eq days.key}">
                                         <c:forEach items="${eventSheduler.value}" var="oneEventSheduler">
                                             <br>
-                                            <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span style="color:red" class="glyphicon glyphicon-minus"
-                                                                                            aria-hidden="true" title="Delete event"></span></a>
+                                            <a href="deleteEventSheduler?id=${oneEventSheduler.id}"><span
+                                                    style="color:red" class="glyphicon glyphicon-minus"
+                                                    aria-hidden="true" title="Delete event"></span></a>
                                             <sup style="font-size: x-small; color: mediumblue">
                                                     ${oneEventSheduler.time}
                                             </sup>

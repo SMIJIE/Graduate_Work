@@ -21,9 +21,9 @@ import java.util.List;
 
 @Controller
 public class AdminController {
+    static final int ITEMS_PER_PAGE = 15;
     @Autowired
     private FinanseDAO finanseDAO;
-    static final int ITEMS_PER_PAGE = 15;
 
     @RequestMapping("/usersForAdmin")
     public String usersForAdmin(Model model, @RequestParam(required = false, defaultValue = "0") Integer page) {

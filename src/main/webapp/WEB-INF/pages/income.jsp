@@ -277,8 +277,9 @@
                 </thead>
                 <c:forEach items="${incomes}" var="incomeOne">
                     <tr>
-                        <td><a href="deleteIncome?id=${incomeOne.id}" title="Delete note"><span class="glyphicon glyphicon-trash"
-                                                                            aria-hidden="true"></span></a></td>
+                        <td><a href="deleteIncome?id=${incomeOne.id}" title="Delete note"><span
+                                class="glyphicon glyphicon-trash"
+                                aria-hidden="true"></span></a></td>
                         <td>${incomeOne.date}</td>
                         <td>${incomeOne.amount}</td>
                         <td>${incomeOne.currencyCode}</td>
@@ -330,6 +331,7 @@
         }
         return null; // специальная клавиша
     }
+
     <%--Checking the date,amount field--%>
 </script>
 
