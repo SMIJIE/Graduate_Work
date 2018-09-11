@@ -1,0 +1,49 @@
+.idea/*
+schoolBackend.iml
+target
+webapp
+*.log
+backend.log*
+*.txt
+mvn
+# local config
+src/main/resources/config/local.conf
+local.test.conf
+
+# Created by https://www.gitignore.io/api/eclipse
+
+### Eclipse ###
+
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# Code Recommenders
+.recommenders/
+
+
+### Eclipse Patch ###
+# Eclipse Core		
+.project
+
+# JDT-specific (Eclipse Java Development Tools)		
+.classpath
+
+# End of https://www.gitignore.io/api/eclipse
+
+#ignore image data xml liquibase
+*image-data.xml
