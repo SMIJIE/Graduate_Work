@@ -32,7 +32,7 @@ public class ExchangeRate {
         this.codeCurrency = codeCurrency;
         this.name = name;
         this.rate = rate;
-        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         this.date = sdf.parse(dateStr);
     }
 

@@ -9,7 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import ua.kiev.prog.Additional.YahooParser;
+import ua.kiev.prog.Additional.CurrencyConverterApi;
 import ua.kiev.prog.Entity.CustomUser;
 import ua.kiev.prog.Entity.EventSheduler;
 import ua.kiev.prog.Entity.Expense;
@@ -121,7 +121,7 @@ public class MyController {
 
         CustomUser dbUser = finanseDAO.getUserByLogin(login);
         model.addAttribute("user", dbUser);
-        model.addAttribute("currencyCodeName", YahooParser.translateCurrency(dbUser.getCurrencyCode().toString()));
+        model.addAttribute("currencyCodeName", CurrencyConverterApi.translateCurrency(dbUser.getCurrencyCode().toString()));
         model.addAttribute("exchangeRates", finanseDAO.getExchangeRates());
 
         return "currencySettings";
