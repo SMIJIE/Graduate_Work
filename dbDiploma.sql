@@ -40,7 +40,8 @@ CREATE TABLE `customuser` (
 
 LOCK TABLES `customuser` WRITE;
 /*!40000 ALTER TABLE `customuser` DISABLE KEYS */;
-INSERT INTO `customuser` VALUES (1,'USD','admin@i.ua','admin','fcb709c1d957fe00a5bf6a6e82b86ebf3eed693c','+38 (093) 353 28 16','ADMIN'),(2,'UAH','user@i.ua','user','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8','+38 (039) 535 82 61','USER'),(3,'UAH','tekken97@inbox.ru','moonbeam','0cb3bec358cf9d1d00b3e95c8064ac02827b79e9','+38 (099) 234 51 52','USER');
+INSERT INTO `customuser` VALUES (1,'USD','admin@i.ua','admin','fcb709c1d957fe00a5bf6a6e82b86ebf3eed693c','+38 (093) 353 28 16','ADMIN'),
+(2,'UAH','user@i.ua','user','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8','+38 (039) 535 82 61','USER');
 /*!40000 ALTER TABLE `customuser` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -72,7 +73,28 @@ CREATE TABLE `eventsheduler` (
 
 LOCK TABLES `eventsheduler` WRITE;
 /*!40000 ALTER TABLE `eventsheduler` DISABLE KEYS */;
-INSERT INTO `eventsheduler` VALUES (1,300,'Income','2017-07-25','Additional work!',6,'19:00:00',2),(2,NULL,'Nothing','2017-07-26','Meeting with girlfriend!',NULL,'16:00:00',2),(3,200,'Expense','2017-07-26','Go to the cinema...',6,'20:00:00',2),(4,2500,'Income','2017-07-31','My salary!',7,'13:30:00',2),(5,1000,'Expense','2017-07-31','Credit!',7,'17:00:00',2),(6,500,'Expense','2017-07-29','Friend Birthday!',8,'18:00:00',2),(8,NULL,'Nothing','2017-07-27',' Sent email for my BOSS..',NULL,'12:00:00',2),(9,NULL,'Nothing','2017-07-28','Write month report=(',NULL,'16:48:00',2),(10,NULL,'Expense','2017-07-30','Buy some products...',NULL,'14:00:00',2),(11,1500,'Income','2017-08-15','My salary!',8,'11:21:00',2),(12,2500,'Income','2017-08-31','My salary!',9,'11:22:00',2),(13,500,'Expense','2017-08-01','Rent',9,'11:22:00',2),(14,1000,'Expense','2017-08-31','Credit',10,'11:23:00',2),(15,NULL,'Nothing','2017-08-01','Meeting with friends',NULL,'16:00:00',2),(16,NULL,'Nothing','2017-08-02','Meeting with MOM!',NULL,'11:24:00',2),(17,500,'Expense','2017-08-08','Bought new things!',11,'10:22:00',2),(18,NULL,'Nothing','2017-08-28','Business meeting!',NULL,'16:00:00',2),(19,NULL,'Expense','2017-08-29','Lunch with a friend!',NULL,'16:00:00',2),(20,NULL,'Expense','2017-08-29','Hike to the supermarket',NULL,'19:00:00',2),(21,500,'Income','2017-08-30','Additional income!',10,'13:00:00',2),(22,NULL,'Nothing','2017-11-16','555',NULL,'14:07:00',2),(23,NULL,'Nothing','2017-11-16','4511515',NULL,'14:08:00',2);
+INSERT INTO `eventsheduler` VALUES (1,300,'Income',ADDDATE(CURDATE(),-23),'Additional work!',6,'19:00:00',2),
+(2,NULL,'Nothing',ADDDATE(CURDATE(),-36),'Meeting with girlfriend!',NULL,'16:00:00',2),
+(3,200,'Expense',ADDDATE(CURDATE(),-39),'Go to the cinema...',6,'20:00:00',2),
+(4,2500,'Income',ADDDATE(CURDATE(),-31),'My salary!',7,'13:30:00',2),
+(5,1000,'Expense',ADDDATE(CURDATE(),-31),'Credit!',7,'17:00:00',2),
+(6,500,'Expense',ADDDATE(CURDATE(),-33),'Friend Birthday!',8,'18:00:00',2),
+(8,NULL,'Nothing',ADDDATE(CURDATE(),-35),' Sent email for my BOSS..',NULL,'12:00:00',2),
+(9,NULL,'Nothing',ADDDATE(CURDATE(),-33),'Write month report=(',NULL,'16:48:00',2),
+(10,NULL,'Expense',ADDDATE(CURDATE(),-31),'Buy some products...',NULL,'14:00:00',2),
+(11,1500,'Income',ADDDATE(CURDATE(),10),'My salary!',8,'11:21:00',2),
+(12,2500,'Income',ADDDATE(CURDATE(),16),'My salary!',9,'11:22:00',2),
+(13,500,'Expense',CURDATE(),'Rent',9,'11:22:00',2),
+(14,1000,'Expense',ADDDATE(CURDATE(),16),'Credit',10,'11:23:00',2),
+(15,NULL,'Nothing',CURDATE(),'Meeting with friends',NULL,'16:00:00',2),
+(16,NULL,'Nothing',ADDDATE(CURDATE(),1),'Meeting with MOM!',NULL,'11:24:00',2),
+(17,500,'Expense',ADDDATE(CURDATE(),5),'Bought new things!',11,'10:22:00',2),
+(18,NULL,'Nothing',ADDDATE(CURDATE(),10),'Business meeting!',NULL,'16:00:00',2),
+(19,NULL,'Expense',ADDDATE(CURDATE(),11),'Lunch with a friend!',NULL,'16:00:00',2),
+(20,NULL,'Expense',ADDDATE(CURDATE(),11),'Hike to the supermarket',NULL,'19:00:00',2),
+(21,500,'Income',ADDDATE(CURDATE(),15),'Additional income!',10,'13:00:00',2),
+(22,NULL,'Nothing',ADDDATE(CURDATE(),31),'555',NULL,'14:07:00',2),
+(23,NULL,'Nothing',ADDDATE(CURDATE(),31),'4511515',NULL,'14:08:00',2);
 /*!40000 ALTER TABLE `eventsheduler` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -98,7 +120,21 @@ CREATE TABLE `exchangerate` (
 
 LOCK TABLES `exchangerate` WRITE;
 /*!40000 ALTER TABLE `exchangerate` DISABLE KEYS */;
-INSERT INTO `exchangerate` VALUES ('AUD','2017-11-01','Australian Dollar',20.6171),('BGN','2017-11-01','Bulgarian Lion',15.9473),('BYR','2017-11-01','Belarusian Rubles',0.0013),('CAD','2017-11-01','Canadian Dollar',20.955),('CHF','2017-11-01','Swiss Frank',26.903),('CNY','2017-11-01','Chinese Yuan',4.0686),('CZK','2017-11-01','Czech Crowns',1.2224),('EUR','2017-11-01','Euro',31.3708),('GBP','2017-11-01','Pound Sterling of the United Kingdom',35.7611),('JPY','2017-11-01','Japanese Yen',0.2361),('PLN','2017-11-01','Polish Zloty',7.3805),('RUB','2017-11-01','Russian Ruble',0.4606),('SEK','2017-11-01','Swedish Kronor',3.2018),('UAH','2017-11-01','Ukrainian Hryvnia',1),('USD','2017-11-01','U.S. Dollar',26.86);
+INSERT INTO `exchangerate` VALUES ('AUD',CURDATE(),'Australian Dollar',20.6171),
+('BGN',CURDATE(),'Bulgarian Lion',15.9473),
+('BYR',CURDATE(),'Belarusian Rubles',0.0013),
+('CAD',CURDATE(),'Canadian Dollar',20.955),
+('CHF',CURDATE(),'Swiss Frank',26.903),
+('CNY',CURDATE(),'Chinese Yuan',4.0686),
+('CZK',CURDATE(),'Czech Crowns',1.2224),
+('EUR',CURDATE(),'Euro',31.3708),
+('GBP',CURDATE(),'Pound Sterling of the United Kingdom',35.7611),
+('JPY',CURDATE(),'Japanese Yen',0.2361),
+('PLN',CURDATE(),'Polish Zloty',7.3805),
+('RUB',CURDATE(),'Russian Ruble',0.4606),
+('SEK',CURDATE(),'Swedish Kronor',3.2018),
+('UAH',CURDATE(),'Ukrainian Hryvnia',1),
+('USD',CURDATE(),'U.S. Dollar',26.86);
 /*!40000 ALTER TABLE `exchangerate` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -129,7 +165,17 @@ CREATE TABLE `expense` (
 
 LOCK TABLES `expense` WRITE;
 /*!40000 ALTER TABLE `expense` DISABLE KEYS */;
-INSERT INTO `expense` VALUES (1,500,'Rent','','UAH','2017-06-01',2),(2,1000,'Credit','','UAH','2017-06-30',2),(3,500,'Rent','','UAH','2017-07-01',2),(4,300,'Food','For my Birthday!','UAH','2017-07-23',2),(5,100,'Beverage','For my Birthday!','UAH','2017-07-23',2),(6,200,'Sheduler','Go to the cinema...','UAH','2017-07-26',2),(7,1000,'Sheduler','Credit!','UAH','2017-07-31',2),(8,500,'Sheduler','Friend Birthday!','UAH','2017-07-29',2),(9,500,'Sheduler','Rent','UAH','2017-08-01',2),(10,1000,'Sheduler','Credit','UAH','2017-08-31',2),(11,500,'Sheduler','Bought new things!','UAH','2017-08-08',2);
+INSERT INTO `expense` VALUES (1,500,'Rent','','UAH',ADDDATE(CURDATE(),-8),2),
+(2,1000,'Credit','','UAH',ADDDATE(CURDATE(),-13),2),
+(3,500,'Rent','','UAH',ADDDATE(CURDATE(),-10),2),
+(4,300,'Food','For my Birthday!','UAH',ADDDATE(CURDATE(),-35),2),
+(5,100,'Beverage','For my Birthday!','UAH',ADDDATE(CURDATE(),-31),2),
+(6,200,'Sheduler','Go to the cinema...','UAH',ADDDATE(CURDATE(),-25),2),
+(7,1000,'Sheduler','Credit!','UAH',ADDDATE(CURDATE(),-15),2),
+(8,500,'Sheduler','Friend Birthday!','UAH',ADDDATE(CURDATE(),-10),2),
+(9,500,'Sheduler','Rent','UAH',CURDATE(),2),
+(10,1000,'Sheduler','Credit','UAH',ADDDATE(CURDATE(),20),2),
+(11,500,'Sheduler','Bought new things!','UAH',ADDDATE(CURDATE(),5),2);
 /*!40000 ALTER TABLE `expense` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -160,7 +206,16 @@ CREATE TABLE `income` (
 
 LOCK TABLES `income` WRITE;
 /*!40000 ALTER TABLE `income` DISABLE KEYS */;
-INSERT INTO `income` VALUES (1,2500,'Salary','','UAH','2017-06-30',2),(2,1500,'Salary','','UAH','2017-06-15',2),(3,1000,'Gifts','My birthday!','UAH','2017-06-24',2),(4,1500,'Salary','','UAH','2017-07-15',2),(5,500,'Selling things','Sold my old phone...','UAH','2017-07-24',2),(6,300,'Sheduler','Additional work!','UAH','2017-07-25',2),(7,2500,'Sheduler','My salary!','UAH','2017-07-31',2),(8,1500,'Sheduler','My salary!','UAH','2017-08-15',2),(9,2500,'Sheduler','My salary!','UAH','2017-08-31',2),(10,500,'Sheduler','Additional income!','UAH','2017-08-30',2);
+INSERT INTO `income` VALUES (1,2500,'Salary','','UAH',ADDDATE(CURDATE(),-31),2),
+(2,1500,'Salary','','UAH',ADDDATE(CURDATE(),-30),2),
+(3,1000,'Gifts','My birthday!','UAH',ADDDATE(CURDATE(),-25),2),
+(4,1500,'Salary','','UAH',ADDDATE(CURDATE(),-15),2),
+(5,500,'Selling things','Sold my old phone...','UAH',CURDATE(),2),
+(6,300,'Sheduler','Additional work!','UAH',CURDATE(),2),
+(7,2500,'Sheduler','My salary!','UAH',ADDDATE(CURDATE(),30),2),
+(8,1500,'Sheduler','My salary!','UAH',ADDDATE(CURDATE(),30),2),
+(9,2500,'Sheduler','My salary!','UAH',ADDDATE(CURDATE(),40),2),
+(10,500,'Sheduler','Additional income!','UAH',ADDDATE(CURDATE(),10),2);
 /*!40000 ALTER TABLE `income` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
