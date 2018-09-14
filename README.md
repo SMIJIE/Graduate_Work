@@ -1,4 +1,4 @@
-#Home Finance
+# Home Finance
 
 - Consider all your expenses and incomes.
 - Use currency converter online.
@@ -7,7 +7,7 @@
 - Keep records in any currency of the world.
 
 > ##### For testing:
-> Login: user
+> Login: user 
 > Password: password
 
 
