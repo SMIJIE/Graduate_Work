@@ -1,5 +1,5 @@
 .idea/
-schoolBackend.iml
+*.iml
 target
 webapp
 *.log
